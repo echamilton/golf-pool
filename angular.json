@@ -23,6 +23,17 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
+            "allowedCommonJsDependencies": [
+              "rxjs-compat",
+              "firebase",
+              "@firebase/app",
+              "@firebase/database",
+              "@firebase/firestore",
+              "@firebase/auth",
+              "@firebase/functions",
+              "@firebase/component",
+              "lodash"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -45,6 +56,7 @@
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
+              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
